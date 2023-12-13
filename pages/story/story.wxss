@@ -1,0 +1,288 @@
+/* pages/story/story.wxss */
+.brandstory {  
+  display: flex;  
+  flex-direction: column; /* 将袋子里的内容垂直排列 */  
+  justify-content: center; /* 袋子里的内容水平居中 */  
+  align-items: center; /* 袋子里的内容垂直居中 */   
+  margin-top: 10rpx;
+}  
+
+swiper {
+  border-radius: 3%;
+  width: 720rpx;
+  height: 30vh;
+  background-color: #ffffff;
+  padding-top: 40rpx;
+  text-align: center;
+}
+
+.swiper_plus {
+  border-radius: 3%;
+  width: 720rpx;
+  height: 40vh;
+  background-color: #ffffff;
+  padding-top: 40rpx;
+  text-align: center;
+}
+
+.slide-image {
+  width: 200rpx;
+  height: 100%;
+  border-radius: 3%;
+  background-color: #ffffff;
+}
+
+.image{
+  width: 720rpx;
+  padding-top: 2%;
+  text-align: center;
+  height: 480rpx;
+  margin-bottom: 30rpx;
+  border-radius: 5%;
+  background: #fff;
+  padding: 0%;
+  margin-top: 130rpx;
+}
+.video {
+  width: 720rpx;
+  padding-top: 2%;
+  text-align: center;
+  height: 480rpx;
+  margin-bottom: 30rpx;
+  border-radius: 3%;
+  background: #fff;
+  padding: 0%;
+  margin-top: 10rpx;
+}
+
+.title {  
+  color: #ff0000; /* 红色字体 */  
+  font-size: 35rpx; /* 字体大小 */  
+}  
+
+.line {
+  height: 1.5rpx;  
+  width: 5%;  
+  background-color: #ff0000; /* 红色线条 */  
+  line-height: 5rpx; /* 设置行高 */  
+  margin-bottom: 30rpx; /* 设置上下的边距 */ 
+}
+  
+.content {    
+  font-size: 25rpx; /* 减小字体大小 */    
+  line-height: 1; /* 稍微调小一点行高 */    
+  text-align: center; /* 文字居中 */  
+  margin-top: 0rpx; /* 设置上边的边距 */   
+  margin-bottom: -90rpx; /* 设置下边的边距 */   
+}
+
+.NUDO{
+  display: flex;  
+  flex-direction: column; /* 将袋子里的内容垂直排列 */  
+  justify-content: center; /* 袋子里的内容水平居中 */  
+  align-items: center; /* 袋子里的内容垂直居中 */  
+  width: 100%; /* 设置袋子的宽度为100% */  
+  height: 100%; /* 设置袋子的高度为100% */  
+}
+
+
+
+.swiper-item-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  /* justify-content: center; */
+  align-items: center;
+  /* position: relative; */
+}
+
+.swiper-item-content text {
+  color: #000;
+  font-size: 25rpx;
+  margin-bottom: 30rpx;
+}
+
+.swiper-item-content image {
+  border-radius: 5%;
+}
+
+.swiper-item-content .title {  
+  color: #ff0000; /* 红色字体 */  
+  font-size: 35rpx; /* 字体大小 */  
+}  
+  
+.swiper-item-content .line {  
+  height: 1.5rpx;  
+  width: 5%;  
+  background-color: #ff0000; /* 红色线条 */  
+  line-height: 5rpx; /* 设置行高 */  
+  margin-bottom: 30rpx; /* 设置上下的边距 */  
+} 
+
+.swiper-container{
+  margin-top: 60rpx;
+}
+
+.t3{
+  display: flex;  
+  flex-direction: column; /* 将袋子里的内容垂直排列 */  
+  justify-content: center; /* 袋子里的内容水平居中 */  
+  align-items: center; /* 袋子里的内容垂直居中 */  
+  margin-top: -50rpx; /* 设置上边的边距 */   
+}
+
+
+.con {    
+  font-size: 25rpx; /* 减小字体大小 */    
+  line-height: 1.2; /* 稍微调小一点行高 */    
+  text-align: center; /* 文字居中 */  
+  margin-top: 0rpx; /* 设置上边的边距 */   
+  margin-bottom: -90rpx; /* 设置下边的边距 */   
+}
+.sitle{
+  margin-top: -70rpx; /* 设置上边的边距 */   
+  color: #ff0000; /* 红色字体 */  
+  font-size: 35rpx; /* 字体大小 */ 
+
+}
+.t2{
+  display: flex; /* 使用Flex布局 */  
+  width: 100%; /* 设置容器宽度 */  
+  height: 450rpx; /* 设置容器高度 */  
+  overflow: hidden; /* 隐藏超出容器的部分 */   
+  margin-top: 100rpx; /* 设置上边的边距 */
+}
+.left-column{
+  position: absolute; /* 设置背景图片为绝对定位 */  
+  width: 55%; /* 设置容器宽度 */  
+  height: 650rpx; /* 设置容器高度 */  
+  overflow: hidden; /* 隐藏超出容器的部分 */   
+  margin-bottom: 500rpx; /* 设置下边的边距 */   
+  margin-left:-85rpx; /* 设置左边的边距 */
+  margin-right: 0rpx; /* 在每张图片的右边添加间距 */  
+  border-radius: 5%; 
+}  
+
+.right-column{ 
+  position: absolute; /* 设置叠加图片为绝对定位 */ 
+  width: 60%; /* 设置容器宽度 */  
+  height: 650rpx; /* 设置容器高度 */  
+  overflow: hidden; /* 隐藏超出容器的部分 */   
+  margin-bottom: 500rpx; /* 设置下边的边距 */   
+  margin-left:250rpx; /* 设置左边的边距 */ 
+  margin-top: 0rpx; /* 设置上边的边距 */
+}
+
+
+.lin {  
+  height: 1.5rpx;  
+  width: 25%;  
+  background-color: #0c0c0c; /* 黑色线条 */  
+  line-height: 5rpx; /* 设置行高 */  
+  margin:5rpx; /* 设置上下的边距 */  
+}  
+
+
+.titl{  
+  margin-top: 100rpx; /* 设置上边的边距 */   
+  color: #000000; /* 黑色字体 */  
+  font-size: 25rpx; /* 字体大小 */ 
+   
+}  
+.aww{
+  margin-top: 100rpx; /* 设置上边的边距 */
+}
+
+.lines {  
+  height: 1.5rpx;  
+  width: 13%;  
+  background-color: #ff0000; /* 红色线条 */  
+  line-height: 5rpx; /* 设置行高 */  
+  margin:5rpx; /* 设置上下的边距 */  
+}  
+.son {    
+  display: flex;  
+  flex-direction: column; /* 将袋子里的内容垂直排列 */  
+  justify-content: center; /* 袋子里的内容水平居中 */  
+  align-items: center; /* 袋子里的内容垂直居中 */  
+  font-size: 23rpx; /* 减小字体大小 */    
+  line-height:1; /* 稍微调小一点行高 */    
+  text-align: center; /* 文字居中 */  
+  margin-top: 5rpx; /* 设置上边的边距 */   
+  margin-bottom: -90rpx; /* 设置下边的边距 */   
+}
+
+.t4{
+  display: flex;  
+  flex-direction: column; /* 将袋子里的内容垂直排列 */  
+  justify-content: center; /* 袋子里的内容水平居中 */  
+  align-items: center; /* 袋子里的内容垂直居中 */  
+  margin-top: 100rpx; /* 设置上边的边距 */   
+}
+  
+swiper .wx-swiper-dot {  
+  width: 50rpx; /* 设置指示点的大小 */  
+  height: 2rpx;  
+  margin: 0 -10 rpx; /* 设置指示点的间距 */  
+  background-color: #ccc; /* 设置指示点的颜色 */  
+}  
+  
+swiper .wx-swiper-dot.wx-swiper-dot-active {  
+  background-color: rgb(128, 128, 128); /* 设置当前指示点的颜色 */  
+}
+
+.lb{
+width: 720rpx;
+height: 400rpx;
+flex-direction: column; /* 将袋子里的内容垂直排列 */  
+justify-content: center; /* 袋子里的内容水平居中 */  
+align-items: center; /* 袋子里的内容垂直居中 */ 
+margin-top: 50rpx; /* 设置上边的边距 */   
+margin-left:100rpx; /* 设置左边的边距 */  
+}  
+
+.set{
+  display: flex;  
+  flex-direction: column; /* 将袋子里的内容垂直排列 */  
+  justify-content: center; /* 袋子里的内容水平居中 */  
+  align-items: center; /* 袋子里的内容垂直居中 */  
+  font-size: 23rpx; /* 减小字体大小 */    
+  line-height:1; /* 稍微调小一点行高 */    
+  text-align: center; /* 文字居中 */  
+  margin-top: 5rpx; /* 设置上边的边距 */   
+  margin-bottom: 0rpx; /* 设置下边的边距 */ 
+  margin-bottom: 0rpx; /* 设置下边的边距 */ 
+  border-radius: 50%; /* 将框架变成圆形 */   
+}
+
+.tb{
+  width: 100%;
+  /* height: 400rpx; */
+  flex-direction: column; /* 将袋子里的内容垂直排列 */  
+  justify-content: center; /* 袋子里的内容水平居中 */  
+  align-items: center; /* 袋子里的内容垂直居中 */ 
+  margin-top: 50rpx; /* 设置上边的边距 */   
+  margin-left:0rpx; /* 设置左边的边距 */  
+  }  
+  .see{
+    display: flex;  
+    flex-direction: column; /* 将袋子里的内容垂直排列 */  
+    justify-content: center; /* 袋子里的内容水平居中 */  
+    align-items: center; /* 袋子里的内容垂直居中 */  
+    font-size: 25rpx; /* 减小字体大小 */    
+    line-height:1; /* 稍微调小一点行高 */    
+    text-align: center; /* 文字居中 */  
+    margin-top: 5rpx; /* 设置上边的边距 */   
+    margin-bottom: -90rpx; /* 设置下边的边距 */ 
+    margin-bottom: 0rpx; /* 设置下边的边距 */ 
+    border-radius: 50%; /* 将框架变成圆形 */   
+  }
+  .t5{
+    display: flex;  
+    flex-direction: column; /* 将袋子里的内容垂直排列 */  
+    justify-content: center; /* 袋子里的内容水平居中 */  
+    align-items: center; /* 袋子里的内容垂直居中 */  
+    margin-top: 40rpx; /* 设置上边的边距 */   
+  }

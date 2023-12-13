@@ -1,0 +1,26 @@
+<!--pages/personal/personal.wxml-->
+<image class="banner" src="https://static.pomellato.cn/media/wysiwyg/KV_2.png"></image>
+<view class="top">
+  <view class="container">
+    <view class="col">
+      <view class="rect1"  bindtap="tabutton">
+        <image class="huiyuan" src="/images/huiyuan.png"></image>
+        <view class="huiyuantext">会员中心</view>
+      </view>
+      <view class="rect2" bindtap="onTapButton">
+        <image class="zaixian" src="/images/kefu.png"></image>
+        <view class="zaixiantext">在线客服</view>
+      </view>
+    </view>
+    <view class="col" >
+      <view class="rect3"  bindtap="ontapbutton">
+        <image class="dingdan" src="/images/dingdan.png"></image>
+        <view class="dingdantext">我的订单</view>
+      </view>
+      <view class="rect4" bindtap="gotoAround">
+        <image class="fujin" src="/images/fujin.png"></image>
+        <view class="fujintext">附近门店</view>
+      </view>
+    </view>
+  </view>
+</view>

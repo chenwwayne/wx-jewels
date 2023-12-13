@@ -1,0 +1,118 @@
+.slide-image {
+
+  width: 96%;
+  height: 70vh;
+  border-radius: 3%;
+  background-color: #ffffff;
+}
+.swiper {
+  border-radius: 3%;
+  height: 70vh;
+  background-color: #ffffff;
+  padding-top: 4%;
+  text-align: center;
+}
+.video {
+  padding-top: 2%;
+  text-align: center;
+  height: 480rpx;
+  margin-bottom: 30rpx;
+  border-radius: 3%;
+  background: #fff;
+  padding: 0%;
+}
+  .video video { 
+  width: 96%;
+  height: 480rpx;
+  margin-top: 0rpx;
+  border-radius: 3%;
+  }
+  .slide-images {
+    text-align: center;
+    width: 96%;
+    height: 70vh;
+    border-radius: 3%;
+    background-color: #ffffff;
+  }
+  .swipers {
+    border-radius: 3%;
+    height: 70vh;
+    background-color: #ffffff;
+    padding-top: 2%;
+    text-align: center;
+    padding-bottom: 30rpx;
+  }
+  .category {
+    padding: 15px 0 10px 0;
+    overflow: auto;
+    background-color: #FFF;
+    margin-bottom: 10px;
+  }
+  .category_item {
+    width: 25%;
+    float: left;
+    margin-bottom: 5px;
+  }
+  .icon_wrap {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 10rpx;
+  }
+  .index_icon {
+    width: 100rpx;
+    height: 100rpx;
+    border: 5rpx solid #9f311e;
+    border-radius: 25%;
+    
+  }
+  .category_item_text {
+    text-align: center;
+    font-size:larger;
+    color: #9f311e;
+    font-family: "黑体"
+  }
+  .singal_item {
+    text-align: center;
+    background-color: #FFF;
+    margin-bottom: 10px;
+  }
+  .singal_item_title {
+    
+    padding: 10px;
+    font-size: 16px;
+  }
+  .singal_item_image {
+    line-height: 0;
+  }
+  .commen_title {
+    padding: 10px;
+    background-color: #fff;
+    font-size: 16px;
+    border-bottom: 1px solid #E9E9E9;
+  }
+  .singal_item_title{
+    color: #9f311e;
+    font-size: large;
+    text-align: center;
+  }
+  .singal_image{
+    width: 96%;
+    text-align: center;
+    height: 400rpx;
+    border-radius: 5%; 
+    margin-top: 25rpx; 
+     margin-bottom: 25rpx;
+  }
+  .singal_item_titles{
+    color: #9f311e;
+    font-size: large;
+    text-align: center;
+  }
+  .singal_images{
+    width: 96%;
+    text-align: center;
+    height: 50vh;
+    border-radius: 5%; 
+    margin-top: 25rpx; 
+     margin-bottom: 25rpx;
+  }

@@ -1,0 +1,72 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/classify/classify",
+    "pages/story/story",
+    "pages/bags/bags",
+    "pages/personal/personal",
+    "pages/shopping/shopping",
+    "pages/shopping_detail/shopping_detail",
+    "pages/cart/cart",
+    "pages/pay/pay",
+    "pages/map/map",
+    "pages/test/test"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  },
+  "rendererOptions": {
+    "skyline": {
+      "defaultDisplayBlock": true,
+      "disableABTest": true,
+      "sdkVersionBegin": "3.0.0",
+      "sdkVersionEnd": "15.255.255"
+    }
+  },
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents",
+  "tabBar": {
+    
+    "color": "black",
+    "backgroundColor": "#ffffff",
+    "selectedColor": "#9f311e",
+    "borderStyle": "white",
+    "list": [
+      {
+          "pagePath": "pages/index/index",
+          "text": "首页",
+          "iconPath": "images/雷迪恩形.png",
+          "selectedIconPath": "images/雷迪恩形1.png"
+      },
+      {
+        "pagePath": "pages/classify/classify",
+        "text": "分类",
+        "iconPath": "images/car1.png",
+        "selectedIconPath": "images/car.png"
+      },
+      {
+          "pagePath": "pages/story/story",
+          "text": "品牌故事",
+          "iconPath": "images/品牌故事.png",
+          "selectedIconPath": "images/品牌故事1.png"
+      },
+      {
+          "pagePath": "pages/cart/cart",
+          "text": "购物袋",
+          "iconPath": "images/car1.png",
+          "selectedIconPath": "images/car.png"
+      },
+      {
+          "pagePath": "pages/personal/personal",
+          "text": "个人中心",
+          "iconPath": "images/wode1.png",
+          "selectedIconPath": "images/wode.png"
+      }
+    ]
+  },
+  "useExtendedLib": {
+    "weui": true
+  }
+}

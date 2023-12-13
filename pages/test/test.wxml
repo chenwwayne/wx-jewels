@@ -1,0 +1,4 @@
+<!--pages/test/test.wxml-->
+<!-- <text>pages/test/test.wxml</text>
+<video src="https://static.pomellato.cn/media/sftp/7.3hj.mp4"></video> -->
+<mp-icon type="field" icon="add" color="black" size="{{25}}"></mp-icon>

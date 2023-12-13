@@ -1,0 +1,58 @@
+<!--index.wxml-->
+<navigation-bar title="POMELLATO" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+<view>
+  <swiper class="swiper" indicator-dots="false" autoplay="true" interval="4000" duration="1000" circular="true" easing-function="easeInOutCubic" >
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item.swiperurl}}"  class="slide-image" mode="aspectFill" bindtap="gotoPage"  data-url="{{item.navigateTo}}"/>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<view class="category">
+  <view class="category_item" wx:for="{{iconArray}}">
+    <view class="category_item_wrap" >
+      <view class="icon_wrap">
+        <image src="{{item.iconUrl}}" class="index_icon" bindtap="gotoPage" data-url="{{item.navigateTo}}"></image>
+      </view>
+      <view class="category_item_text">
+        <text>{{item.iconText}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="video">
+  <video src="https://static.pomellato.cn/media/sftp/7.3hj.mp4" circular="true" objectFit="cover" autoplay="true" ></video>
+</view> 
+ <view>
+  <swiper class="swipers" indicator-dots="false" autoplay="true" interval="4000" duration="1000" circular="true" easing-function="easeInOutCubic">
+    <block wx:for="{{imgUrlss}}">
+      <swiper-item>
+        <image src="{{item.swiperurls}}" class="slide-images" mode="aspectFill" bindtap="gotoPage" data-url="{{item.navigateTo}}" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view>
+  <view class="singal_item" wx:for="{{itemArray}}">
+    <view class="singal_item_title">
+      <text>{{item.itemText}}</text>
+    </view>
+    <view class="singal_item_image">
+      <image class="singal_image "bindload="cusImageLoad" src="{{item.itemUrl}} " bindtap="gotoPage" data-url="{{item.navigateTo}}"></image>
+    </view>
+  </view>
+</view> 
+<view>
+  <view class="singal_item" wx:for="{{itemArrays}}">
+    <view class="singal_item_title">
+      <text>{{item.itemText}}</text>
+    </view>
+    <view class="singal_item_images">
+      <image class="singal_images "bindload="cusImageLoad" src="{{item.itemUrls}} " bindtap="gotoNext" data-url="{{item.navigateTo}}">
+      </image>
+    </view>
+  </view>
+</view> 

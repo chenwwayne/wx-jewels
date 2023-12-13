@@ -1,0 +1,71 @@
+<!--index.wxml-->
+<navigation-bar title="POMELLATO" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+<scroll-view class="scrollarea" scroll-y type="list">
+  <view class='productNav'>
+    <!-- 左侧 -->
+    <view class='left'>
+      <view class="{{active==0?'selected':'normal'}}" id="0" bindtap='switchNav'>A系列</view>
+      <view class="{{active==1?'selected':'normal'}}" id="1" bindtap='switchNav'>B系列</view>
+      <view class="{{active==2?'selected':'normal'}}" id="2" bindtap='switchNav'>C系列</view>
+    </view>
+    
+    <!-- 右侧 -->
+    <view class='right'>
+      <view class='type'>
+        <!-- current:当前所在滑块的 index -->
+        <!-- vertical:滑动方向是否为纵向 -->
+        <swiper current='{{currentTab}}' vertical='{{true}}'>
+          <!-- catchtouchmove 阻止弹窗后滚动穿透 -->
+          <swiper-item id="0" catchtouchmove="false">
+            <view wx:for="{{main_key}}" wx:for-item="group" wx:for-index="groupIndex">
+              <view wx:if="{{groupIndex === 0}}" >
+                <!-- 显示banner和slogan -->
+                <view style="display: flex; flex-direction: column; align-items: center;">
+                  <image src="{{group.banner}}" mode="aspectFill" style="width:100%; height:400rpx;"></image>
+                  <text style="margin-top: 40rpx;">{{group.slogan}}</text>
+                </view>
+
+                <!-- 遍历每个组的产品 -->
+                <view wx:for="{{group.products}}" wx:for-item="product" wx:for-index="productIndex">
+                  <!-- 显示产品信息 -->
+                  <view class="product-container" bindtap="gotoshopping">
+                    <image class="product-image" src="{{product.image}}" mode="aspectFill"></image>
+                    <text class="product-text">{{product.title}}</text>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </swiper-item>
+          
+          
+          <swiper-item id="1" catchtouchmove="false">
+            <view wx:for="{{main_key}}" wx:for-item="group" wx:for-index="groupIndex">
+              <view wx:if="{{groupIndex === 1}}">
+                <!-- 显示banner和slogan -->
+                <view style="display: flex; flex-direction: column; align-items: center;">
+                  <image src="{{group.banner}}" mode="aspectFill" style="width:100%; height:400rpx;"></image>
+                  <text style="margin-top: 40rpx;">{{group.slogan}}</text>
+                </view>
+
+                <!-- 遍历每个组的产品 -->
+                <view wx:for="{{group.products}}" wx:for-item="product" wx:for-index="productIndex">
+                  <!-- 显示产品信息 -->
+                  <view class="product-container" bindtap="gotoshopping">
+                    <image class="product-image" src="{{product.image}}" mode="aspectFill"></image>
+                    <text class="product-text">{{product.title}}</text>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </swiper-item>
+          
+          
+          <swiper-item id="2" catchtouchmove="false">
+            电脑
+          </swiper-item>
+        </swiper>
+      </view>
+    </view>
+  </view>
+
+</scroll-view>
