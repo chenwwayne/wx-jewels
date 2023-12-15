@@ -1,4 +1,4 @@
-<navigation-bar title="POMELLATO" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+<navigation-bar title="JEWELRY SMILE" back="{{false}}" color="black" background="#FFF"></navigation-bar>
 <view class='cartMain'>
     <view wx:for="{{cartItems}}">
         <view data-id="{{item.id}}"  class='cart-box' data-index="{{index}}">

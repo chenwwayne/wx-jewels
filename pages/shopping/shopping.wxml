@@ -1,5 +1,5 @@
 <!--pages/shopping/shopping.wxml-->
-<navigation-bar title="POMELLATO" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+<navigation-bar title="JEWELRY SMILE" back="{{false}}" color="black" background="#FFF"></navigation-bar>
 <view id='box'>
     <view class='box'>
         <swiper 

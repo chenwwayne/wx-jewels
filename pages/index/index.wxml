@@ -1,5 +1,5 @@
 <!--index.wxml-->
-<navigation-bar title="POMELLATO" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+<navigation-bar title="JEWELRY SMILE" back="{{false}}" color="black" background="#FFF"></navigation-bar>
 <view>
   <swiper class="swiper" indicator-dots="false" autoplay="true" interval="4000" duration="1000" circular="true" easing-function="easeInOutCubic" >
     <block wx:for="{{imgUrls}}">
