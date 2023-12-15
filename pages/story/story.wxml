@@ -1,16 +1,19 @@
 <!--pages/story/story.wxml-->
-<navigation-bar title="POMELLATO" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+<navigation-bar title="JEWELRY SMILE" back="{{false}}" color="black" background="#FFF"></navigation-bar>
 <!-- 品牌故事 -->
 <view class="brandstory">
   <view class="title">品牌故事</view>
   <view class="line"></view>
   <text class="content">
-    创立于1967年米兰的工匠高级珠宝品牌\n
-    以独树一帜的宝石切割机精湛镶嵌技术\n
-    诠释意式先锋珠宝美学之非凡创意\n
-    鎏光溢彩，咫尺匠心，斑斓而生
+    创立于2023年11月的中国珠宝品牌
+
+    以其风格简约的彩色宝石珠宝及非凡工艺
+
+    被誉为“天然彩宝大师”“演绎自然之美”
+
+    印证了对自然、色彩及美的追求
   </text>
-  <image src="https://static.pomellato.cn/media/wysiwyg/W000189_1.jpg" class="image"></image>
+  <image src="/images/黄钻2.jpg" class="image"></image>
 </view>
 
 <!-- NUDO -->
@@ -45,17 +48,22 @@
       <view class="title">自如自洽 无畏表达</view>
       <view class="lines"></view>
       <text class="son">
-        「她们」包容共进彼此珍视\n
-        凝心聚力以多元化女性视角发声\n
+        「她们」包容共进彼此珍视
+
+        凝心聚力以多元化女性视角发声
+        
       </text>
     </view>
     <view class="t4">
       <video class="video" src="https://static.pomellato.cn/media/sftp/HJ-2.mp4" circular="true" objectFit="cover" autoplay="true"></video>
     </view>
     <text class="son">
-      Pomellato宝曼兰朵再度携手女性榜样对话自我\n
-      启幕Pomellato For Women第六篇章——\n
-      「自如自洽无畏表达」\n
+      Pomellato宝曼兰朵再度携手女性榜样对话自我
+
+      启幕Pomellato For Women第六篇章——
+      
+      「自如自洽无畏表达」
+
     </text>
   </view>
 
@@ -87,7 +95,8 @@
     <view class="title">二十年卓绝设计</view>
     <view class="lines"></view>
     <text class="set">
-      回溯Pomellato宝曼兰朵创意总监——\n
+      回溯Pomellato宝曼兰朵创意总监——
+
       文森佐▪卡斯塔尔多二十年卓绝设计
     </text>
   </view>
@@ -97,15 +106,24 @@
   </view>
 
   <text class="set">
-    Pomellato宝曼兰朵创意总监——\n
-    文森佐▪卡斯塔尔多（Yincenzo Castaldo）\n
-    写手展望未来，不倦秉持匠心工艺的传统，\n
-    并缔造极富现代魅力的珠宝作品。\n
-    为纪念他在平拍的第二十周年，\n
-    Pomellato宝曼兰朵发布记录短片，\n
-    由卡斯卡斯塔尔多（Castaldo）\n
-    倾情呈现他对于品牌的愿景、历程、以及创作的赤诚之心，\n
-    伴随米兰在他人旅途中浓墨重彩的一笔。\n
+    Pomellato宝曼兰朵创意总监——
+    
+    文森佐▪卡斯塔尔多（Yincenzo Castaldo）
+
+    写手展望未来，不倦秉持匠心工艺的传统，
+
+    并缔造极富现代魅力的珠宝作品。
+
+    为纪念他在平拍的第二十周年，
+
+    Pomellato宝曼兰朵发布记录短片，
+
+    由卡斯卡斯塔尔多（Castaldo）
+
+    倾情呈现他对于品牌的愿景、历程、以及创作的赤诚之心，
+
+    伴随米兰在他人旅途中浓墨重彩的一笔。
+
   </text>
 
 
@@ -142,10 +160,14 @@
     <video class="video" src="https://static.pomellato.cn/media/sftp/nudo.mp4" circular="true" objectFit="cover" autoplay="true"></video>
   </view>
   <text class="see">
-    双圈细腻金环相遇相交于同心结，\n
-    如曼妙邂逅，从此心意相通，缔结成双成对的至美羁绊。\n
-    相拥的双环和美与共，镶嵌华美钻石与宝石，永驻隽美熠彩。\n
-    转动同心结，将律动与活力蕴于和谐的流线型美感之中。\n
+    双圈细腻金环相遇相交于同心结，
+
+    如曼妙邂逅，从此心意相通，缔结成双成对的至美羁绊。
+
+    相拥的双环和美与共，镶嵌华美钻石与宝石，永驻隽美熠彩。
+
+    转动同心结，将律动与活力蕴于和谐的流线型美感之中。
+
   </text>
 
   <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000" circular="true">
