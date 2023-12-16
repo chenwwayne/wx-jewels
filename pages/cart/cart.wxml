@@ -1,5 +1,38 @@
 <navigation-bar title="JEWELRY SMILE" back="{{false}}" color="black" background="#FFF"></navigation-bar>
 <view class='cartMain'>
+  <view class="cart-readypay" wx:if="{{cartItems.length == 0}}">
+<!-- <view class="cart-readypay"> -->
+  <view class="paybag">
+    <text class="a">购物袋</text>
+  </view>
+  <view class="cart-xhx"></view>
+  <view class="cart-text1">
+    <text class="b">尊享顺丰免费配送和七天无理由退货服务</text>
+  </view>
+  <view class="cart-text2">
+    <text class="c">您的购物袋目前没有商品</text>
+  </view>
+  <text>探索热卖产品</text>
+
+  <swiper previous-margin="250rpx" next-margin="250rpx" style='background:white;' class="cart-swiper" duration="{{500}}" autoplay="true" circular="true" indicator-dots="true" indicator-active-color="#000">
+    <view>
+  
+      <swiper-item class="cart-swiperitem" wx:for="{{homeIndex}}">
+        <image class="cart-swiper1" src="{{item.image}}"></image>
+        <view class="cart-swiper2">{{item.title}}</view>
+        <view class="cart-swiper3">{{item.price}}</view>
+        <view  class="cart-swiper4" catchtap='goToshopping_detail' data-id="{{item.id}}">即刻选购</view>
+      </swiper-item>
+    </view>
+  </swiper>
+
+  <view bindtap="goToclassify" class='ruturn-classify'>
+    <text class="run">点击探索更多作品</text>
+  </view>
+</view>
+
+
+
     <view wx:for="{{cartItems}}">
         <view data-id="{{item.id}}"  class='cart-box' data-index="{{index}}">
             <view class='icon'>
@@ -15,7 +48,7 @@
 
                 <view class='left_box'>
                     <text class="cart-title">{{item.title}}</text>
-                    <text class="cart-price">￥{{item.price}}</text>
+                    <text class="cart-price">¥{{item.price}}</text>
 
                     <text bindtap='reduce'  class="input cart-reduce"  data-index="{{index}}">-</text>
                     <text class="input cart-text">{{item.value}}</text>

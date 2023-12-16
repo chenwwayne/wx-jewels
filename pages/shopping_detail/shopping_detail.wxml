@@ -1,47 +1,91 @@
 <!--pages/shopping_detail/shopping_detail.wxml-->
 <navigation-bar title="JEWELRY SMILE" back="{{false}}" color="black" background="#FFF"></navigation-bar>
 <view id='box'>
-  <swiper 
-      indicator-dots="Boolean"
-      indicator-color="#ebebeb"
-      indicator-active-color="rgba(0, 0, 0, .3)"
-      autoplay="Boolean"
-      circular="Boolean"
-  >
+  <swiper indicator-dots="Boolean" indicator-color="#ebebeb" indicator-active-color="rgba(0, 0, 0, .3)" autoplay="Boolean" circular="Boolean">
+    <swiper-item>
+      <image src="{{data.image}}" class="slide-image" />
+    </swiper-item>
+
     <swiper-item>
       <image src="{{data.Imgone}}" class="slide-image" />
     </swiper-item>
 
-     <swiper-item>
+    <swiper-item>
       <image src="{{data.Imgtwo}}" class="slide-image" />
+    </swiper-item>
+
+    <swiper-item>
+      <image src="{{data.Imgtrthree}}" class="slide-image" />
     </swiper-item>
   </swiper>
 
   <view class='box'>
-      <text class='title'>{{data.title}}{{data.titleTwo}}</text>
-      <text class='price'>￥{{data.price}}</text>
+    <text class='detail-title'>{{data.title}}</text>
+    <text class='detail-number'>{{data.number}}</text>
+    <text class='detail-price'>{{data.price}}</text>
+  </view>
+ 
+
+<view>
+<text>探索更多</text>
+<text>查看全部</text>
+</view>
+  <view>
+  <swiper>
+  <swiper-item>
+    <image src="{{item.image}}"></image>
+  </swiper-item>
+  </swiper>
+  
   </view>
 
-  <view class='boxtwo'>
-    <view class="boxtwo-tab-nav {{HomeIndex == 0 ?'on':''}}" bindtap="boxtwo" data-index="0">商品详情</view>
-    <view class="boxtwo-tab-nav {{HomeIndex == 1 ?'on':''}}" bindtap="boxtwo" data-index="1">产品参数
-   </view>
+  <view class="boxs">
+    <view class="boxs-q">产品信息</view>
+    <view class="box-qq">11</view>
+    <view class="box-a">{{data.Seriesname}}</view>
+    <view class="box-b">{{data.Seriesslogan}}</view>
+    <view class="box-x">xx</view>
+    <view class="box-c">{{data.Seriesdescribe}}</view>
+    <view>
+      <image class="box-d" src="{{data.Seriesimg}}"></image>
+    </view>
+  </view>
 
-      <view class="boxtwo-content"  class='img_one'>
+
+  <!-- <view class='boxtwo'>
+    <view class="boxtwo-tab-nav {{HomeIndex == 0 ?'on':''}}" bindtap="boxtwo" data-index="0">商品详情</view> -->
+  <!-- <view class="boxtwo-tab-nav {{HomeIndex == 1 ?'on':''}}" bindtap="boxtwo" data-index="1">产品参数
+   </view> -->
+
+  <!-- <view class="boxtwo-content"  class='img_one'>
           <view wx:if="{{HomeIndex == 0}}" wx:for="{{data.img}}" wx:for-item="img">
                 <image src='{{img.image}}' mode="{{img.mode}}" class='boxtwo_image'></image>
               <!-- <text>{{img.name}}</text> -->
-          </view>
-          <view wx:if="{{HomeIndex == 1}}" class='product'>产品参数</view>
-      </view>
-  </view>
+  <!-- </view> -->
+  <!-- <view wx:if="{{HomeIndex == 1}}" class='product'>产品参数</view> -->
+  <!-- </view> / --> -->
+  <!-- </view>  -->
 
   <view class='dibu'>
-    <view class='left'>
-        <text class='text' bindtap="addcart" data-id="{{data.id}}"  data-title="{{data.title}}"data-price="{{data.price}}"data-image="{{data.image}}" >加入购物车</text>
+
+  <!-- <view class='bottomone'>
+  <text>首页</text>
+  </view>
+  <view class='bottomtwe'>
+  <text>购物袋</text>
+  </view> -->
+    <view class="bottomone" bindtap="goToindex">
+      <text class='text'>首页</text>
     </view>
-    <view class='right'>
-        <text class='text' bindtap="goPay" data-id="{{data.id}}">立即购买</text>
+    <view class="bottomtwe" bindtap="goTocart">
+      <text class='text'>购物袋</text>
+    </view>
+
+    <view class='bottomthree'>
+      <text class='text' bindtap="addcart" data-id="{{data.id}}" data-title="{{data.title}}" data-price="{{data.price}}" data-image="{{data.image}}">加入购物车</text>
+    </view>
+    <view class='bottomfour'>
+      <text class='text' bindtap="goPay" data-id="{{data.id}}">立即购买</text>
     </view>
   </view>
 </view>

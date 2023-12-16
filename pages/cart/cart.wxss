@@ -1,4 +1,109 @@
 /* pages/cart/cart.wxss */
+.cart-readypay{
+  display: flex;  
+  flex-direction: column; /* 将袋子里的内容垂直排列 */  
+  justify-content: center; /* 袋子里的内容水平居中 */  
+  align-items: center; /* 袋子里的内容垂直居中 */ 
+}
+.paybag{
+  margin-top:60rpx;
+  margin-bottom: 10rpx;
+}
+.a{
+  font-size: 160%;
+}
+.cart-xhx{
+  background-color: black;
+  width: 600rpx;
+  height: 3.5rpx;
+  margin-bottom: 40rpx;
+}
+.cart-text1{
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  margin-bottom: 90rpx;
+}
+.b{
+  width: 100%;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+
+}
+.cart-text2{
+  display: block;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  margin-bottom: 150rpx;
+}
+.c{
+  width: 100%;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  font-size: 127%;
+  font-weight: 700;
+  margin-top: 150rpx;
+  margin-bottom: 150rpx;
+}
+.cart-swiper{
+  width: 750rpx;
+  height: 500rpx;
+  margin-top: 55rpx;
+}
+
+.cart-swiperitem{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;  */
+  align-items: center; 
+  /* align-content: center; */
+  width: 200rpx;
+  /* margin: auto; */
+}
+
+.cart-swiper1{
+  width:200rpx ;
+  height: 200rpx;
+}
+.cart-swiper2{
+  /* width: auto ; */
+  width: 170rpx;
+  margin-left: 15rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  /* text-overflow: ellipsis; */
+}
+/* .cart-swiper3{
+  width:200rpx ;
+  justify-content: center; 
+  align-items: center;
+} */
+.cart-swiper4{
+   background-color: #dce3eb;
+   margin: 25rpx;
+}
+.ruturn-classify{
+  margin-top: 50rpx;
+  width: 300rpx;
+  height: 60rpx;
+  background-color: black;
+}
+.run{
+  color: #ccc;
+  font-size: 120%;
+  margin-left: 15rpx;
+  margin-top: 10rpx;
+}
+
+
+
+
+
+
+
 .cartMain{
   margin-bottom: 120rpx;
   margin-top: 0rpx;
@@ -38,7 +143,8 @@
  .cart-price{
    display: flex;
    color: red;
-   font-size: 30rpx
+   font-size: 30rpx;
+   
  }
  .left{
    float: left;
@@ -134,5 +240,14 @@
    line-height: 87rpx;
    font-size: 28rpx;
  }
+
+swiper .wx-swiper-dot{
+  width: 8rpx;
+  height: 3rpx;
+  margin: 0 !important;
+  padding: -10 !important;
+  background-color: rgb(224, 224, 224);
+}
  
+
  

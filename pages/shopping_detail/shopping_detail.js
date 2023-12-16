@@ -4,18 +4,23 @@ Page({
   data:{
     HomeIndex:0
   },
+  goToindex:function(){
+    wx.switchTab({
+      url: '/pages/index/index',
+    })
+  },
+  goTocart:function(){
+    wx.switchTab({
+      url: '/pages/cart/cart',
+    })
+  },
   goPay:function(e){
     var Id = e.currentTarget.dataset.id
     wx.navigateTo({
       url: '../../pages/pay/pay?id=' + Id
     })
   },
-  boxtwo: function (e) {
-    var index = parseInt(e.currentTarget.dataset.index) 
-    this.setData({
-      HomeIndex: index
-    })
-  },
+ 
   addcart: function (e) {
     var cartItems = wx.getStorageSync("cartItems") || []
     var exist = cartItems.find(function (el) {

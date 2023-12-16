@@ -28,8 +28,8 @@
                 <image class='main-image' src="{{item.image}}"></image>
                 <view class='box'>
                     <text class='main-title'>{{item.title}}</text>
-                    <text class='main-titleTwo'>{{item.titleTwo}}</text>
-                    <text class='main-price'>￥{{item.price}}</text>
+                    <!-- <text class='main-titleTwo'>{{item.material}}</text> -->
+                    <text class='main-price'>¥ {{item.price}}</text>
                 </view>
             </view>
           </view>

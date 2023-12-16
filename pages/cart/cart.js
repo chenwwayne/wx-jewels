@@ -6,8 +6,25 @@ Page({
     total:0,
     CheckAll:true
   },
+  goToclassify:function(e){
+    wx.switchTab({
+      url: '/pages/classify/classify',
+    })
+  },
+  goToshopping_detail:function(e){
+    var HomeId = e.currentTarget.dataset.id
+    console.log(HomeId)
+    wx.navigateTo({
+      url: '/pages/shopping_detail/shopping_detail?id=' + HomeId,
+    })
+  },
+
   onLoad:function(e){
-    
+    this.setData({
+      homeIndex : json.homeIndex
+    })
+    var cartItems = wx.getStorageSync("cartItems")
+    console.log("chenww", cartItems);
   },
    onShow: function () {
      var cartItems = wx.getStorageSync("cartItems")
