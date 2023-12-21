@@ -39,32 +39,32 @@
       {
           "pagePath": "pages/index/index",
           "text": "首页",
-          "iconPath": "images/雷迪恩形.png",
-          "selectedIconPath": "images/雷迪恩形1.png"
+          "iconPath": "images/珠宝.png",
+          "selectedIconPath": "images/珠宝1.png"
       },
       {
         "pagePath": "pages/classify/classify",
         "text": "分类",
-        "iconPath": "images/car1.png",
-        "selectedIconPath": "images/car.png"
+        "iconPath": "images/分类.png",
+        "selectedIconPath": "images/分类1.png"
       },
       {
           "pagePath": "pages/story/story",
           "text": "品牌故事",
-          "iconPath": "images/品牌故事.png",
-          "selectedIconPath": "images/品牌故事1.png"
+          "iconPath": "images/学习.png",
+          "selectedIconPath": "images/学习1.png"
       },
       {
           "pagePath": "pages/cart/cart",
           "text": "购物袋",
-          "iconPath": "images/car1.png",
-          "selectedIconPath": "images/car.png"
+          "iconPath": "images/购物车.png",
+          "selectedIconPath": "images/购物车1.png"
       },
       {
           "pagePath": "pages/personal/personal",
           "text": "个人中心",
-          "iconPath": "images/wode1.png",
-          "selectedIconPath": "images/wode.png"
+          "iconPath": "images/个人中心-置灰.png",
+          "selectedIconPath": "images/个人中心-置灰1.png"
       }
     ]
   },
