@@ -1,0 +1,23 @@
+/* pages/huiyuan/huiyuan.wxss */
+.avatar-wrapper {
+  width: 250rpx;
+  height: 250rpx;
+  padding: 0;
+  background: none;
+  margin-top: 25vh;
+}
+
+.avatar {
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 20rpx;
+  margin-top: 20vh;
+}
+
+.nickname {
+  width: 80%;
+  height: 100rpx;
+  margin: 20px auto;
+  border: 1px solid #000000;
+  text-align: center;
+}

@@ -1,0 +1,12 @@
+/* pages/zaixiankefu/zaixiankefu.wxss */
+button{
+  margin-top: 600rpx;
+}
+.image{
+  width: 50vw;
+  height: 50vw;
+  flex-shrink: 0; 
+  margin-top: 150rpx;
+  margin-left: 180rpx;
+
+}

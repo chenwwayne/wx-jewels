@@ -10,6 +10,8 @@
     "pages/cart/cart",
     "pages/pay/pay",
     "pages/map/map",
+    "pages/huiyuan/huiyuan",
+    "pages/zaixiankefu/zaixiankefu",
     "pages/test/test"
   ],
   "window": {
@@ -68,5 +70,14 @@
   },
   "useExtendedLib": {
     "weui": true
+  },
+  "requiredPrivateInfos": [
+    "getLocation"
+  ],
+
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
   }
 }

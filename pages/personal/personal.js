@@ -75,8 +75,8 @@ Page({
       })
     },
     ontapbutton: function() {
-      wx.navigateTo({
-        url: '/pages/wodedingdan/wodedingdan',
+      wx.switchTab({
+        url: '/pages/cart/cart',
       })
     },
     tabutton: function() {
