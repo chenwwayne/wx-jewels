@@ -5,6 +5,7 @@ page {
   flex-direction: column;
 }
 .scrollarea {
+  height: 100%;
   flex: 1;
   overflow-y: hidden;
 }
@@ -15,13 +16,14 @@ page {
   font-family: "Microsoft YaHei"
 }
 .left{
-  width: 25%;
-  font-size: 30rpx;
+  height: 100vh;
+  width: 30%;
+  font-size: 28rpx;
   background-color: #f4f4f4;
 }
 .left view{
   text-align: center;
-  height: 90rpx;
+  height: 100rpx;
   line-height: 90rpx;
 }
 .selected{

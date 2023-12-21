@@ -4,9 +4,14 @@
   <view class='productNav'>
     <!-- 左侧 -->
     <view class='left'>
-      <view class="{{active==0?'selected':'normal'}}" id="0" bindtap='switchNav'>A系列</view>
-      <view class="{{active==1?'selected':'normal'}}" id="1" bindtap='switchNav'>B系列</view>
-      <view class="{{active==2?'selected':'normal'}}" id="2" bindtap='switchNav'>C系列</view>
+      <view class="{{active==0?'selected':'normal'}}" id="0" bindtap='switchNav'>甄选作品</view>
+      <view class="{{active==1?'selected':'normal'}}" id="1" bindtap='switchNav'>ISOLA系列</view>
+      <view class="{{active==2?'selected':'normal'}}" id="2" bindtap='switchNav'>NUDO系列</view>
+      <view class="{{active==3?'selected':'normal'}}" id="3" bindtap='switchNav'>ICONICA系列</view>
+      <view class="{{active==4?'selected':'normal'}}" id="4" bindtap='switchNav'>TOGETHER系列</view>
+      <view class="{{active==5?'selected':'normal'}}" id="5" bindtap='switchNav'>ORSETTO系列</view>
+      <view class="{{active==6?'selected':'normal'}}" id="6" bindtap='switchNav'>SABBIA系列</view>
+      <view class="{{active==7?'selected':'normal'}}" id="7" bindtap='switchNav'>M'AMA系列</view>
     </view>
     
     <!-- 右侧 -->
@@ -36,9 +41,28 @@
               </view>
             </view>
           </swiper-item>
-          
-          
           <swiper-item id="1" catchtouchmove="false">
+            <view wx:for="{{main_key}}" wx:for-item="group" wx:for-index="groupIndex">
+              <view wx:if="{{groupIndex === 1}}">
+                <!-- 显示banner和slogan -->
+                <view style="display: flex; flex-direction: column; align-items: center;">
+                  <image src="{{group.banner}}" mode="aspectFill" style="width:100%; height:400rpx;"></image>
+                  <text style="margin-top: 40rpx;">{{group.slogan}}</text>
+                </view>
+                <!-- 遍历每个组的产品 -->
+                <view wx:for="{{group.products}}" wx:for-item="product" wx:for-index="productIndex">
+                  <!-- 显示产品信息 -->
+                  <view class="product-container" bindtap="gotoshopping">
+                    <image class="product-image" src="{{product.image}}" mode="aspectFill"></image>
+                    <text class="product-text">{{product.title}}</text>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </swiper-item>
+          
+          
+          <swiper-item id="2" catchtouchmove="false">
             <view wx:for="{{main_key}}" wx:for-item="group" wx:for-index="groupIndex">
               <view wx:if="{{groupIndex === 1}}">
                 <!-- 显示banner和slogan -->
@@ -57,11 +81,6 @@
                 </view>
               </view>
             </view>
-          </swiper-item>
-          
-          
-          <swiper-item id="2" catchtouchmove="false">
-            电脑
           </swiper-item>
         </swiper>
       </view>
