@@ -1,1 +1,1 @@
-![](https://github.com/ischansgithub/wx-jewels/blob/master/pic.png?raw=true)
+![](https://raw.githubusercontent.com/ischansgithub/wx-jewels/master/pic.png)
